@@ -1,8 +1,16 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+// import Link from 'next/link'
+// import Course from './Course'
+
+
+// for Error  
+// import dynamic from "next/dynamic";
+
 
 export default function LandingPage() {
-  return (
+    return (
     <div>
         {/* <h1>LandingPage page</h1> */}
 
@@ -28,8 +36,17 @@ export default function LandingPage() {
               
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="course.html">Course</a></li>
+                    <li>
+                        <a href="/">
+                        Home
+                        </a>
+                    </li>
+                    <li>
+                        <Link href={"./Course"}>    
+                        Course
+                        </Link>
+                    </li>
+                    
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -226,3 +243,6 @@ export default function LandingPage() {
     </div>
   )
 }
+
+// for Error 
+// export default dynamic (() => Promise.resolve(LandingPage), {ssr: false})
