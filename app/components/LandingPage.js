@@ -1,5 +1,5 @@
 import React from 'react'
-// import Image from 'next/image'
+import Image from 'next/image'
 
 export default function LandingPage() {
   return (
@@ -94,19 +94,19 @@ export default function LandingPage() {
     <div class="row">
         <div class="campus-col">
             
-            <img  src='/Campus1.png' alt="image-1"/>
+            <Image  src={"/Campus1.png"} alt="image-1" width={130} height={194}   />
             <div class="layer">
                 <h3>DELHI</h3>
             </div>
         </div>
         <div class="campus-col">
-            <img src="/Campus2.png" alt="image-2"/>
+            <Image src={"/Campus2.png"} alt="image-2"  width={130} height={194} />
             <div class="layer">
                 <h3>HYDERABAD</h3>
             </div>
         </div>
         <div class="campus-col">
-            <img src="/Campus3.png" alt="image-3"/>
+            <Image src={"/Campus3.png"} alt="image-3"  width={130} height={194} />
             <div class="layer">
                 <h3>MUMBAI</h3>
             </div>
@@ -126,19 +126,19 @@ export default function LandingPage() {
 
         <div class="row">
             <div class="facilities-col">
-                <img src="/libary.png" alt="picture-1"/>
+                <Image src={"/libary.png"} alt="picture-1"  width={125} height={190} />
                 <h3>Best Libary</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                 </p>
             </div>
             <div class="facilities-col">
-                <img src="/playground.png" alt="picture-2"/>
+                <Image src={"/playground.png"} alt="picture-2"  width={125} height={190} />
                 <h3>Athletics</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                 </p>
             </div>
             <div class="facilities-col">
-                <img src="/food.png" alt="picture-3"/>
+                <Image src={"/food.png"} alt="picture-3" width={125} height={190} />
                 <h3>Tasty and Healthy Food</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                 </p>
@@ -158,7 +158,7 @@ export default function LandingPage() {
 
         <div class="row">
             <div class="testimonials-col">
-                <img src="/user.png" alt="piccccc"/>
+                <Image src={"/user.png"} alt="piccccc" width={60} height={60} />
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
                         praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
@@ -172,7 +172,7 @@ export default function LandingPage() {
                 </div>
             </div>
             <div class="testimonials-col">
-                <img src="/user.png" alt="piccccc"/>
+                <Image src="/user.png" alt="piccccc" width={60} height={60} />
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
                         praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
