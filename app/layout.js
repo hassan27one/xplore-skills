@@ -1,7 +1,9 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 
-import Course from './components/Course'
+// import Course from './components/Course'
+// import Blog from './components/blogg/Blog'
+
 // import LandingPage from './components/LandingPage'
 
 
@@ -17,7 +19,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       {/* <LandingPage/> */}
-      <Course/>  
+      {/* <Course/>   */}
+      {/* <Blog/> */}
       {children}
       </body>
     </html>

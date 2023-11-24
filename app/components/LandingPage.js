@@ -1,6 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import Link from "next/link"
+// import { bloge } from './bloge'
+
+
 // import Link from 'next/link'
 // import Course from './Course'
 
@@ -42,12 +45,17 @@ export default function LandingPage() {
                         </a>
                     </li>
                     <li>
-                        <Link href={"./Course"}>    
+                        <Link href="/Course">    
                         Course
                         </Link>
                     </li>
                     
-                    <li><a href="blog.html">Blog</a></li>
+                    <li>
+                    <Link href={"./bloge"}>    
+                        bloge
+                    </Link>
+                    </li>
+                    
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
